@@ -18,3 +18,8 @@ let addition_of_array=[1,3,4,6,2,1]
 
  console.log(sum);
  
+
+// let addition1=addition_of_array.reduce((acc,curval)=>{
+//   return acc=acc+curval
+// },0)
+// console.log(addition1);

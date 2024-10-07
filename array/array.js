@@ -8,7 +8,7 @@ console.log(newarray);
 console.log("searching");
 
 let searchingarray=[89,67,32,85,54]
-console.log(searchingarray.indexOf(89,1));
+console.log(searchingarray.indexOf(89));
 
 console.log(searchingarray.includes(1));
 
@@ -25,7 +25,7 @@ console.log(removeelemnt);
 
 
 removeelemnt.splice(2,2)
-console.log(removeelemnt);
+console.log("spliced",removeelemnt);
 
 console.log("delete whole array");
 let deletewhole_array=[2,32,545,5556,76,87]

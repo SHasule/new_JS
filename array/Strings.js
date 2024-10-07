@@ -9,8 +9,8 @@ let date=new Date('2003,1,26')
 console.log(date.toLocaleString());
 
 date.setFullYear(2001)
-console.log(date);
+console.log("year",date);
 
 let curdate=new Date()
-console.log(curdate);
+console.log(curdate.toLocaleDateString());
 

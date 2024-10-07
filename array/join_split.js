@@ -1,7 +1,7 @@
 
 let num=[12,43,54,65]
 
-const joined=num.join(",")
+const joined=num.join("-")
 console.log(joined);
 
 
