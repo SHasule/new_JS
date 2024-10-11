@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div style="display: flex; justify-content: center;">
+    <h2 style="font-size:1.9rem;" id="time"></h2>
+  </div>
+ 
+
+  <script>
+    
+     function  gettime(){
+      let d=new Date();
+      document.querySelector("#time").innerHTML=
+      d.getHours() +":"+
+      d.getMinutes() +":"+
+      d.getSeconds()
+     }
+     setInterval(gettime,1000)
+     
+  </script>
+</body>
+
+</html>
