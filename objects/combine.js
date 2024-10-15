@@ -20,6 +20,8 @@ let user={
   email:"suraj@gmail.com",
   isloggedin:"false",
 }
+console.log("user object");
+
 console.log(user);
 console.log(Object.keys(user));
 console.log(Object.values(user));
