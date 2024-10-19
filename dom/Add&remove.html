@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+  <ul class="language">
+    <li>javascript</li>
+  </ul>
+  
+</body>
+
+<script>
+
+  function addlanguage(lanname){
+ const li=document.createElement("li")
+  li.innerHTML=`${lanname}`
+   document.querySelector('.language').appendChild(li)
+  }
+  addlanguage("pyhton")
+  addlanguage("ruby")
+
+
+  function optilang(lanname){
+    const li=document.createElement("li")
+  const addtext=document.createTextNode(lanname)
+   li.appendChild(addtext)
+   document.querySelector('.language').appendChild(li)
+  }
+  optilang("c++")
+
+
+
+  // edit element
+ let choose_lang=document.querySelector("li:nth-child(3)")
+//  choose_lang.innerHTML="php"
+const addNewLi=document.createElement('li')
+addNewLi.textContent="c#"
+choose_lang.replaceWith(addNewLi)
+
+
+// edit another
+let choose_lastLang=document.querySelector('li:nth-child(4)')
+
+ const addlastli=document.createElement("li")
+ addlastli.innerText="HTML"
+choose_lastLang.replaceWith(addlastli)
+
+// remove
+const removelast=document.querySelector("li:last-child")
+removelast.remove()
+</script>
+</html>

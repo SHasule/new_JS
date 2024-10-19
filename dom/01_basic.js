@@ -35,14 +35,20 @@ const atag=document.querySelectorAll("a")
 //  document.body.appendChild(myDiv)
 
 
+
 let content=document.querySelector(".content")
 
 content.addEventListener("click",function(e){
   if(e.target.nodeName==="SPAN"){
     console.log("clicked on span",e.target.textContent);
   }
-
 // console.log(e.target.nodeName);
+})
 
 
+
+let div_item=document.getElementsByClassName("div-item")
+let all_items=Array.from(div_item)
+all_items.forEach((l)=>{
+  l.style.color="blue"
 })

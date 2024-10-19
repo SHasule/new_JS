@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+  <h1>creating and adding elments to document</h1>
+</body>
+
+ <script>
+  let myDIV=document.createElement("div")
+
+  myDIV.className="div-item";
+  myDIV.id="div-id";
+  myDIV.innerText="dom text"
+  myDIV.style.backgroundColor="yellow"
+  myDIV.style.color="black"
+  // document.body.appendChild(myDIV)
+
+  let addnewElement=document.createTextNode("use another may adding element")
+   myDIV.appendChild(addnewElement)
+
+   document.body.appendChild(myDIV)
+ </script>
+
+</html>

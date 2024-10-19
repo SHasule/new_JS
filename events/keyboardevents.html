@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1 tabindex="0">keyboard events</h1>
+  <input type="text">
+</body>
+<script>
+
+const input=document.querySelector("input")
+input.addEventListener("keypress",(e)=>{
+  console.log(e.key);  
+})
+
+
+window.addEventListener('keypress',(e)=>{
+  console.log("key code: ",e.code);
+  console.log("key: ",e.key);
+})
+ 
+</script>
+</html>
