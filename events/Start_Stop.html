@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeout</title>
+</head>
+<body style="background-color: #212121; color: white;">
+  
+
+  <h2>learning Timeout</h2>
+    <button class="stop">stop</button>
+    <button class="start">start</button>
+</body>
+<script>
+
+ 
+// const start= document.querySelector(".start").addEventListener('click',()=>{
+//   setInterval(()=>{
+//   document.querySelector("h2").innerHTML="javascript"
+//  console.log(Date.now());
+// },1000)
+// })
+
+// const Timeout= setInterval(()=>{
+//   document.querySelector("h2").innerHTML="javascript"
+// //  console.log(Date.now());
+// },2000)
+
+
+// document.querySelector(".stop").addEventListener('click',()=>{
+//   clearInterval(start)
+//   console.log("stopped");
+// })
+
+
+
+// document.querySelector('.start').addEventListener('click', function(){
+//         // const intervaled = setInterval(date ,1000); 
+//     const intervaled= console.log("Start");
+   
+//    document.querySelector('.stop').addEventListener('click', function () {
+//     clearInterval(intervaled);
+//     console.log("Stop");
+//     })})
+
+
+document.querySelector(".start").addEventListener('click',function(){
+  const intervalid=setInterval(()=>{
+    console.log("strat");
+    
+  })
+  document.querySelector(".stop").addEventListener("click",()=>{
+    clearInterval(intervalid)
+    console.log("stopped");
+    
+  })
+})
+</script>
+</html>
