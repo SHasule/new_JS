@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   .content{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow:hidden;
+   }
+  </style>
+</head>
+<body class="content">
+  
+  <div >
+    <h1 id="dom">learning dom</h1>
+    <p class="para">this is para</p>
+
+    <ul class="parent">
+      <li class="list">one</li>
+      <li class="list">two</li>
+      <li class="list">three</li>
+      <li class="list">three</li>
+    </ul>
+  </div>
+</body>
+
+<script>
+
+     const parent=document.querySelector(".parent")
+    //  console.log(parent.children[1].innerHTML);
+
+    //  for(let i=0;i<=parent.children.length;i++){
+    //  console.log(parent.children[i].innerHTML);
+    //  }
+     parent.children[2].style.color="RED"
+
+
+    const div=document.createElement("div")
+    console.log(div);
+
+    div.className="hello"
+    div.id="suresh"
+
+    div.style.backgroundColor="red"
+    div.innerHTML="javascript is going on "
+    const text=document.createTextNode("hey everyone ")
+    div.appendChild(text)
+
+    document.body.appendChild(div)
+
+     
+    
+     
+</script>
+
+</html>

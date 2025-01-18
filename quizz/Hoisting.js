@@ -1,8 +1,11 @@
 
+x=1;
+console.log(x);
+var x;
 
-// x=10
-// console.log(x+x);
-// var x=1;
+console.log(P);
+var P=1
+
 
 
 
@@ -21,6 +24,6 @@
 
 
   
-let Z;
-Z=1
-console.log(Z)
+// let Z;
+// Z=1
+// console.log(Z)
