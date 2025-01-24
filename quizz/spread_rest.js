@@ -35,7 +35,15 @@ console.log("rest operator.......");
  }
  RestFunction(2,3,4,5,6,7,8)
 
- 
 
- 
+
+
+//  
+console.log("Rest ....");
+function greet(greeting, ...names) {
+  console.log(greeting);
+  console.log(names);  // The rest of the arguments are captured in the `names` array
+}
+
+greet('Hello', 'Alice', 'Bob', 'Charlie');
  
