@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="parent">
+     <li><div id="child" >hello</div></li>
+     <li><div id="child2" >hi</div></li>
+     <li><div id="child3" >hey</div></li>
+     <span>list</span>
+  </div>
+</body>
+<script>
+  // document.getElementById('child2').onclick=function(){
+  //   alert("hi")
+  // }
+
+  // document.getElementById("parent").addEventListener('click',function(){
+  //  // alert("hey")
+  //   console.log('clicked inside parent');
+    
+  // },)
+
+  // document.getElementById("child3").addEventListener('click',function(e){
+  //  // alert("hey")
+  //   console.log('clicked on child');
+  //   e.stopPropagation()
+  // },) //capturing
+
+
+
+  document.getElementById("parent").addEventListener('click',function(e){
+ console.log(e.target.parentNode);
+ console.log(e.target.tagName);
+ 
+
+   if(e.target.tagName==="DIV"){
+    let removeIt=e.target.parentNode
+         removeIt.remove()
+   }
+         
+  })
+
+      
+</script>
+</html>
