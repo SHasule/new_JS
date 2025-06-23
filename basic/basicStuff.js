@@ -56,3 +56,87 @@ const s2=44
 const s3=45
 console.log(Array.of(s1,s2,s3));
 
+
+
+
+console.log("object");
+const mySym=Symbol("key1")
+
+let obj={
+
+   [mySym]:"key2",
+   name:"suraj"
+   
+}
+console.log(typeof obj[mySym]);
+
+console.log(obj);
+
+obj.greet=function(){
+  console.log("hello", this.name);
+  
+}
+// console.log(obj.greet());
+obj.greet()
+
+
+const obj1={1:"a",2:"b"}
+const obj2={1:"c",3:"b"}
+const obj3={...obj1,...obj2}
+console.log(obj3);
+
+const user=[
+  {
+    email:"xyz@gmail.com",
+  },
+  info={
+    userName:"tony",
+    study:"hindi"
+
+  }
+]
+// console.log(user[1].userName);
+
+console.log(user);
+
+let obj5={
+  userName:"xyz",
+  study:"java"
+}
+const {study:s}=obj5
+console.log(s);
+
+
+
+function calculation(n1,n2){
+    let result=n1+n2
+      return result 
+}
+let result=calculation(2,3)
+console.log(result);
+
+
+
+function printName(user="jhon"){
+  if(!user){
+   return ` enter user name`
+    
+
+  }
+  return `${user} here`
+}
+const print=printName()
+console.log(print);
+
+
+
+const obj6={
+  UserName:"stark",
+  price:332
+}
+
+function handleObject(anyobject){
+  return (`${anyobject.UserName} and price is ${anyobject.price} `);
+   
+}
+console.log(handleObject(obj6));
